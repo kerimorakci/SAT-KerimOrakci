@@ -5,45 +5,75 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>İletişim - Hanımeli Temizlik</title>
   <link rel="stylesheet" href="css/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
   <header>
-    <h1>Bizimle İletişime Geçin</h1>
-    <nav>
-      <a href="index.html">Ana Sayfa</a>
-      <a href="hizmetler.html">Hizmetler</a>
-      <a href="iletisim.html" class="active">İletişim</a>
-    </nav>
+    <div class="container">
+      <div class="logo">
+        <h1>🧼 Hanımeli</h1>
+      </div>
+      <nav>
+        <a href="index.html">Ana Sayfa</a>
+        <a href="hizmetler.html">Hizmetler</a>
+        <a href="iletisim.html" class="active">İletişim</a>
+      </nav>
+    </div>
   </header>
 
   <section class="contact">
-    <form id="contactForm">
-      <label>Ad Soyad</label>
-      <input type="text" required>
+    <div class="container">
+      <h2 class="section-title">Bize Ulaşın</h2>
+      <div class="contact-wrapper">
+        <form id="contactForm">
+          <div class="input-group">
+            <input type="text" placeholder="Ad Soyad" required>
+          </div>
+          <div class="input-group">
+            <input type="email" placeholder="E-posta" required>
+          </div>
+          <div class="input-group">
+            <textarea rows="5" placeholder="Mesajınız" required></textarea>
+          </div>
+          <button type="submit" class="btn">Gönder</button>
+        </form>
 
-      <label>E-posta</label>
-      <input type="email" required>
-
-      <label>Mesajınız</label>
-      <textarea rows="5" required></textarea>
-
-      <button type="submit">Gönder</button>
-    </form>
-
-    <div class="contact-info">
-      <h3>📍 Adres:</h3>
-      <p>Yozgat / Sorgun</p>
-
-      <h3>📞 Telefon:</h3>
-      <p>+90 555 123 45 67</p>
-
-      <h3>📧 E-posta:</h3>
-      <p>info@hanimelitemizlik.com</p>
+        <div class="contact-info">
+          <div class="info-item">
+            <i class="fas fa-map-marker-alt"></i>
+            <div>
+              <h3>Adres</h3>
+              <p>Yozgat / Sorgun</p>
+            </div>
+          </div>
+          <div class="info-item">
+            <i class="fas fa-phone"></i>
+            <div>
+              <h3>Telefon</h3>
+              <p>+90 552 602 27 66</p>
+            </div>
+          </div>
+          <div class="info-item">
+            <i class="fas fa-envelope"></i>
+            <div>
+              <h3>E-posta</h3>
+              <p>hanimelitemizlik66@gmail.com</p>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   </section>
 
   <footer>
-    <p>© 2025 Hanımeli Temizlik | Temizlikte Güvenin Adresi</p>
+    <div class="container">
+      <p>© 2025 Hanımeli Temizlik | <strong>Temizlikte Güvenin Adresi</strong></p>
+      <div class="social">
+        <a href="#"><i class="fab fa-whatsapp"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+      </div>
+    </div>
   </footer>
 
   <script src="js/script.js"></script>
