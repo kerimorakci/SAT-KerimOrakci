@@ -9,71 +9,175 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
-  <header>
-    <div class="container">
-      <div class="logo">
-        <h1>🧼 Hanımeli</h1>
-      </div>
-      <nav>
-        <a href="index.html">Ana Sayfa</a>
-        <a href="hizmetler.html" class="active">Hizmetler</a>
-        <a href="iletisim.html">İletişim</a>
-      </nav>
-    </div>
-  </header>
 
-  <section class="services">
-    <div class="container">
-      <h2 class="section-title">Hizmetlerimiz</h2>
-      <div class="services-grid">
-        <div class="service-card">
-          <i class="fas fa-home"></i>
-          <h3>Ev Temizliği</h3>
-          <p>Ev, mutfak, banyo ve genel alan temizliği.</p>
-          <span class="price">₺800 - ₺1200</span>
-        </div>
+<header>
+  <div class="container">
+    <div class="logo"><h1>🧼 Hanımeli</h1></div>
+    <nav>
+      <a href="index.html">Ana Sayfa</a>
+      <a href="hizmetler.html" class="active">Hizmetler</a>
+      <a href="iletisim.html">İletişim</a>
+    </nav>
+  </div>
+</header>
 
-        <div class="service-card">
-          <i class="fas fa-building"></i>
-          <h3>Ofis Temizliği</h3>
-          <p>Kurumsal alanlar için profesyonel temizlik çözümleri.</p>
-          <span class="price">₺1000 - ₺1600</span>
-        </div>
+<section class="services">
+  <div class="container">
+    <h2 class="section-title">Hizmetlerimiz</h2>
 
-        <div class="service-card">
-          <i class="fas fa-spray-can"></i>
-          <h3>Cam Silme</h3>
-          <p>Pencereler, vitrinler ve yüksek yüzeylerin temizliği.</p>
-          <span class="price">₺500 - ₺900</span>
-        </div>
+    <div class="services-grid">
 
-        <div class="service-card">
-          <i class="fas fa-couch"></i>
-          <h3>Halı & Koltuk Yıkama</h3>
-          <p>Derinlemesine temizlik ve hijyenik sonuçlar.</p>
-          <span class="price">₺400 - ₺800</span>
-        </div>
+      <!-- EV TEMİZLİĞİ -->
+      <div class="service-card clickable reveal"
+        data-title="Ev Temizliği"
+        data-desc="Detaylı ve hijyenik ev temizliği"
+        data-prices='{"1+1":"2000","2+1":"3000","3+1":"4000","4+1":"5000"}'>
+        <i class="fas fa-home"></i>
+        <h3>Ev Temizliği</h3>
+        <span class="price">₺2000 - ₺5000</span>
 
-        <div class="service-card">
-          <i class="fas fa-hard-hat"></i>
-          <h3>İnşaat Sonrası Temizlik</h3>
-          <p>Toz, boya ve kalıntılardan tamamen arındırılmış alanlar.</p>
-          <span class="price">₺1500 - ₺2500</span>
+        <div class="service-details">
+          <ul>
+            <li>✔ Tüm odalar süpürme & silme</li>
+            <li>✔ Mutfak & banyo detay</li>
+            <li>✔ Cam & balkon (pakete göre)</li>
+          </ul>
+          <div class="packages">
+            
+          </div>
         </div>
       </div>
-    </div>
-  </section>
 
-  <footer>
-    <div class="container">
-      <p>© 2025 Hanımeli Temizlik | <strong>Temizlikte Güvenin Adresi</strong></p>
-      <div class="social">
-        <a href="#"><i class="fab fa-whatsapp"></i></a>
-        <a href="#"><i class="fab fa-instagram"></i></a>
+      <!-- OFİS TEMİZLİĞİ -->
+      <div class="service-card clickable reveal"
+        data-title="Ofis Temizliği"
+        data-desc="Kurumsal ofis ve iş yeri temizliği"
+        data-prices='{"Küçük Ofis":"2500","Orta Ofis":"3500","Büyük Ofis":"5000"}'>
+        <i class="fas fa-building"></i>
+        <h3>Ofis Temizliği</h3>
+        <span class="price">₺2500 - ₺5000</span>
+
+        <div class="service-details">
+          <ul>
+            <li>✔ Çalışma alanları</li>
+            <li>✔ WC & mutfak</li>
+            <li>✔ Düzenli bakım</li>
+          </ul>
+        </div>
       </div>
-    </div>
-  </footer>
 
-  <script src="js/script.js"></script>
+      <!-- HALI YIKAMA -->
+      <div class="service-card clickable reveal"
+        data-title="Halı Yıkama"
+        data-desc="Derinlemesine halı yıkama hizmeti"
+        data-prices='{"m² 0-20":"500","m² 20-40":"1500","m² 40":"3000""m² 40+":"6000"}'>
+        <i class="fas fa-rug"></i>
+        <h3>Halı Yıkama</h3>
+        <span class="price">₺500 - ₺6000</span>
+
+        <div class="service-details">
+          <ul>
+            <li>✔ Leke çıkarma</li>
+            <li>✔ Hijyenik yıkama</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- KOLTUK YIKAMA -->
+      <div class="service-card clickable reveal"
+        data-title="Koltuk Yıkama"
+        data-desc="Yerinde koltuk ve oturma grubu temizliği"
+        data-prices='{"2\li + 1":"600","Takım":"900","Köşe Takımı":"1200"}'>
+        <i class="fas fa-couch"></i>
+        <h3>Koltuk Yıkama</h3>
+        <span class="price">₺1000 - ₺5000</span>
+
+        <div class="service-details">
+          <ul>
+            <li>✔ Yerinde uygulama</li>
+            <li>✔ Hızlı kuruma</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- CAM SİLME -->
+      <div class="service-card clickable reveal"
+        data-title="Cam Silme"
+        data-desc="Cam, balkon ve vitrin temizliği"
+        data-prices='{"Daire":"500","Villa":"900","Ofis":"700"}'>
+        <i class="fas fa-spray-can"></i>
+        <h3>Cam Silme</h3>
+        <span class="price">₺500 - ₺900</span>
+
+        <div class="service-details">
+          <ul>
+            <li>✔ İç & dış camlar</li>
+            <li>✔ Balkon camları</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- İNŞAAT SONRASI -->
+      <div class="service-card clickable reveal"
+        data-title="İnşaat Sonrası Temizlik"
+        data-desc="Tadilat ve inşaat sonrası detaylı temizlik"
+        data-prices='{"1+1":"2500","2+1":"3500","3+1":"4500","4+1":"5500"}'>
+        <i class="fas fa-hard-hat"></i>
+        <h3>İnşaat Sonrası</h3>
+        <span class="price">₺2500 - ₺5500</span>
+
+        <div class="service-details">
+          <ul>
+            <li>✔ Boya & harç kalıntıları</li>
+            <li>✔ Detaylı temizlik</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- SİTE YÖNETİMİ -->
+      <div class="service-card clickable reveal"
+        data-title="Site Yönetimi & Temizlik"
+        data-desc="Apartman ve site bazlı düzenli temizlik"
+        data-prices='{"10 Daire":"3000","20 Daire":"6000","30+ Daire":"9000"}'>
+        <i class="fas fa-city"></i>
+        <h3>Site Yönetimi</h3>
+        <span class="price">Referanslı Teklif</span>
+
+        <div class="service-details">
+          <ul>
+            <li>✔ Blok bazlı hizmet</li>
+            <li>✔ Ortak alanlar</li>
+            <li>✔ Referanslı çalışma</li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- POPUP (AYNEN KORUNDU) -->
+<div class="modal" id="serviceModal">
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <h3 id="modalTitle"></h3>
+    <p id="modalDesc"></p>
+
+    <label>Seçenek:</label>
+    <select id="optionSelect"></select>
+
+    <div class="modal-price">
+      Fiyat: <strong>₺<span id="modalPrice"></span></strong>
+    </div>
+  </div>
+</div>
+
+<footer>
+  <div class="container">
+    <p>© 2025 Hanımeli Temizlik</p>
+  </div>
+</footer>
+
+<script src="js/script.js"></script>
 </body>
 </html>
